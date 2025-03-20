@@ -22,6 +22,21 @@ window.addEventListener("scroll", () => {
     }
 });
 
+const contactButton1 = document.querySelector(".contact_button-1");
+const contactButton2 = document.querySelector(".contact_button-2");
+const contactForm = document.querySelector(".contact_forms ");
+
+contactButton1.addEventListener("click", () => {
+  contactForm.classList.toggle("open");
+  contactButton1.classList.toggle("open");
+  contactButton2.classList.toggle("open");
+});
+
+contactButton2.addEventListener("click", () => {
+  contactForm.classList.toggle("open");
+  contactButton1.classList.toggle("open");
+  contactButton2.classList.toggle("open");
+});
 
 // // dropdown
 // const tanong = document.querySelectorAll(".faq_item h4");
